@@ -15,6 +15,71 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="script/script.js"></script>
+
+    <style>
+        body {
+            font-family: 'Bree Serif', serif;
+            position: relative;
+        }
+
+        .rounded-circle {
+            height: 200px;
+            width: 200px;
+
+        }
+
+        .ortala {
+            height: 214vh;
+        }
+
+        .shadow {
+            box-shadow: 0px 0px 8px #000;
+            border-radius: 10px;
+            background-color: #F9F1F0;
+            padding-bottom: 50px;
+
+        }
+
+        .card {
+            border-radius: 10px;
+        }
+
+        /* html{
+    scroll-behavior: smooth;
+} */
+        #card1 {
+            background-color: #F9F1F0;
+            box-shadow: 0px 0px 8px #000;
+        }
+
+        .navbar {
+            box-shadow: 0px 0px 8px #000;
+
+        }
+
+        h2 {
+            margin-top: 55px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $(".nav-link").on('click', function (event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function () {
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -22,9 +87,10 @@
     <!-- navbar start  -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-info">
         <a class="navbar-brand" href="#">CV</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -82,7 +148,8 @@
                                         52</label>
                                     <label><span class="fa fa-envelope fa-2x"></span> &nbsp; E-mail :
                                         kskonurgurgen@gmail.com</label>
-                                    <label><span class="fa fa-map-marker fa-2x"></span> &nbsp; Adres : Manisa - Türkiye </label>
+                                    <label><span class="fa fa-map-marker fa-2x"></span> &nbsp; Adres : Manisa - Türkiye
+                                    </label>
                                     <hr class="mt-5">
 
                                     <h5 class="card-title mt-5">KİŞİSEL BİLGİLER</h5>
