@@ -1,0 +1,39 @@
+body{
+    font-family: 'Bree Serif', serif;
+    position: relative;
+}
+.rounded-circle{
+    height: 200px;
+    width: 200px;
+    
+}
+.ortala{
+    height: 214vh;
+}
+.shadow{
+    box-shadow: 0px 0px 8px #000;
+    border-radius: 10px;
+    background-color: #F9F1F0;
+    padding-bottom: 50px;
+    
+}
+.card{
+    border-radius: 10px;
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+#card1{
+    background-color: #F9F1F0;
+    box-shadow: 0px 0px 8px #000;
+}
+.navbar{
+    box-shadow: 0px 0px 8px #000;
+    
+}
+h2{
+    margin-top: 55px;
+}
+
+
+
